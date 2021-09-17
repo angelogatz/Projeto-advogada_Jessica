@@ -1,0 +1,49 @@
+window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.parallax');
+    let scrollPosition = window.pageYOffset;
+
+    parallax.style.transform = 'translateY(' + scrollPosition * .4 + 'px)';
+});
+
+/*---------------- srcoll reveal parallax ------------------*/
+
+
+window.addEventListener('load', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+/*---------------- srcoll reveal social ------------------*/
+
+window.addEventListener('load', reveal_social);
+
+function reveal_social(){
+    var reveals = document.querySelectorAll('.reveal_social');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}

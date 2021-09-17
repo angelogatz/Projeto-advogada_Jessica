@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*-------------------------------- BUTTON, MOUSE AND SOCIALS ------------------------------------------*/
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    height: 70px;
+  }
+  
+  .toggler {
+    display: none;
+  }
+  
+  
+  
+  .logo {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin-left: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    padding: 16px;
+    margin-top: 10vh;
+    background: #68686852;
+    left: -100%;
+    transition: all .5s;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 16px;
+    margin-left: 16px;
+  }
+  
+  nav a {
+    color: #a6005c;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    
+  }
+  
+  nav a:hover {
+    color: white;
+    transition: ease-in .1s;
+  }
+  
+  .toggler:checked ~ nav ul {
+    left: 0;
+  }
+  
+  .burger {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(31, 31, 31);
+    top: 0;
+    right: 0;
+    margin-right: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .toggler:checked ~ nav a {
+    opacity: 1;
+  }
+  
+  
+  /* Desktop Screen Format */
+  
+  @media screen and (min-width: 800px) {
+    .burger {
+      display: none;
+    }
+  
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+  
+    nav {
+      
+      display: flex;
+      grid-column: 3/4;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    nav ul {
+      all: unset;
+      list-style: none;
+      display: flex;
+      
+    }
+  
+    nav li {
+      margin-bottom: 0;
+      margin-right: 10px;
+      
+    }
+  
+    nav a {
+      opacity: 1;
+    }
+  
+  }
+
+
+  @media screen and (min-width: 1024px){
+      header{
+        background-color: rgba(255, 255, 255, 0.363);
+        
+      }
+      
+  }
+
+
+
+/*-------------------------------- PARALLAX ------------------------------------------*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.parallax__text{
+    width: 350px;
+    margin-top: 200px;
+    margin-left: -570px;
+}
+
+
+
+
+
+
+
+/*-------------------------------- SCROLL-REVEAL ------------------------------------------*/
+
+.reveal{
+    position: relative;
+    transform: translateX(350px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/*-------------------------------- SCROLL-REVEAL ------------------------------------------*/
+.overflow{
+    height: 600px;
+}
+
+
+/*-------------------------------- BUTTON, MOUSE AND SOCIALS ------------------------------------------*/
+
+.home__scroll-button{
+    color: #a6005c;
+    margin-top: 450px;
+    margin-left: -150px;
+    display: none;
+}
+  
+  .home__scroll-button:hover{
+    transform: translateY(.25rem);
+    color: white;
+    transition: .5s ease-in-out;
+  }
+  
+  .home__scroll-mouse{
+    font-size: 2rem;
+  }
+  
+  
+  
+  .home__scroll-arrow{
+    font-size: 1.25rem;
+  }
+
+
+  .home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    margin-top: 220px;
+  
+  }
+  
+  .home__social-icon{
+    font-size: 1.25rem;
+    color: #a6005c;
+    margin-left: -620px;
+    width: 20px;
+  }
+  
+  .home__social-icon:hover{
+    color: #ffffff;
+  }
+
+
+
+  .reveal_social{
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal_social.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 568px){
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .parallax{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .parallax__text{
+        width: 250px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    .home__social{
+        display: inline-flex;
+        margin-top: 350px;
+      
+      }
+      
+      .home__social-icon{
+        font-size: 1.25rem;
+        color: #a6005c;
+        margin-left: -100px;
+        width: 20px;
+      }
+      
+      .home__social-icon:hover{
+        color: #ffffff;
+      }
+
+}
+
+
+
+
+@media screen and (min-width: 568px) and (max-width: 768px){
+
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .parallax{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .parallax__text{
+        width: 350px;
+        margin-top: 200px;
+        margin-left: 10px;
+    }
+
+    .home__social{
+        display: grid;
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+        margin-top: 220px;
+      
+      }
+      
+      .home__social-icon{
+        font-size: 1.25rem;
+        color: #a6005c;
+        margin-left: -410px;
+        width: 20px;
+      }
+      
+      .home__social-icon:hover{
+        color: #ffffff;
+      }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .hero{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .parallax{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .parallax__text{
+        width: 350px;
+        margin-top: 200px;
+        margin-left: -200px;
+    }
+
+    .home__social{
+        display: grid;
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+        margin-top: 220px;
+      
+      }
+      
+      .home__social-icon{
+        font-size: 1.25rem;
+        color: #a6005c;
+        margin-left: -410px;
+        width: 20px;
+      }
+      
+      .home__social-icon:hover{
+        color: #ffffff;
+      }
+
+    
+}
+
+
+
+
+
+
+
+
+
+    
+
+/*-------------------------------- WebKit - ScrollBar  ------------------------------------------*/
+
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: white;
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #d15fa293;
+    border-radius: .5rem;
+  }
+
+

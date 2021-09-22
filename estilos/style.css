@@ -439,9 +439,12 @@ header {
 
 
 .painel{
-  background-color: #2c0018;
-  width: 100%;
-  height: 500px;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+  box-shadow: 1px 1px 3px black;
 }
 
 .painel__content{
@@ -449,12 +452,12 @@ header {
   height: 98%;
   margin-left: 2px;
   transform: translateY(1%);
-  border: 1px solid white;
+  box-shadow: 1px 1px 3px black;
 }
 
 .painel__img{
   width: 70%;
-  margin-left: 45px;
+  margin-left: 40px;
   margin-top: 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 3px black;
@@ -462,32 +465,78 @@ header {
 
 
 .painel__title{
-  color: white;
+  color: rgb(0, 0, 0);
   width: 85%;
   margin-left: 25px;
   margin-top: 20px;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 200;
+  font-weight: 500;
+}
+
+.painel_title{
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+.footer{
+  background-color: #ebebed;
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+  height: 330px;
+}
+
+.footer__img{
+  max-width: 200px;
+  opacity: 0.1;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+
+.container-lb{
+  max-width: 708px;
+}
+
+.portfolio__container{
+  overflow: initial;
+}
+
+.portfolio__content{
+  padding: 1.5rem 2.25rem;
+}
+
+.portfolio__img{
+  width: 300px;
+  border-radius: .5rem;
+}
+
+.portfolio__title{
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio__description{
+  margin-bottom: 0.75rem;
 }
 
 @media screen and (min-width: 300px){
 
   .painel{
-    background-color: #3a0020;
+    background-color: #ffffff;
     width: 100%;
     height: 750px;
+    box-shadow: 1px 1px 3px black;
   }
   .painel__content{
     width: 97%;
     height: 90%;
     margin-left: 5px;
     transform: translateY(5.5%);
-    border: 1px solid white;
+    box-shadow: 1px 1px 3px black;
   }
 
   .painel__img{
-    width: 250px;
-    margin-left: 65px;
+    max-width: 250px;
+    margin-left: 55px;
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
@@ -495,22 +544,75 @@ header {
   
   
   .painel__title{
-    color: white;
+    color: black;
     width: 88%;
     margin-left: 25px;
     margin-top: 20px;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 500;
   }
+  .section__title{
+    margin-left: 100px;
+  }
+
+  .painel_title{
+    margin-left: 105px;
+  }
+  
+  
+  .sections__subtitle{
+    margin-left: 75px;
+  }
+
+  .footer{
+    background-color: #ebebed;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 330px;
+  }
+
+  .footer__img{
+    max-width: 200px;
+    opacity: 0.1;
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+
+  
 }
 
+@media screen and (min-width: 568px){
+
+  .footer{
+    background-color: #ebebed;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 330px;
+  }
+
+  .footer__img{
+    max-width: 400px;
+    opacity: 0.1;
+    margin-left: 165px;
+  }
+
+  .portfolio__img{
+    width: 420px;
+    
+}
+
+.portfolio__content{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
 
 @media screen and (min-width: 768px){
 
   .painel{
-    background-color: #2b0017;
+    background-color: #ffffff;
     width: 100%;
     height: 400px;
+    box-shadow: 1px 1px 3px black;
   }
 
   .painel__border{
@@ -523,7 +625,7 @@ header {
     height: 90%;
     margin-left: 15px;
     transform: translateY(5.5%);
-    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px black;
   }
 
   .painel__img{
@@ -535,13 +637,35 @@ header {
   
   
   .painel__title{
-    color: white;
+    color: rgb(0, 0, 0);
     width: 92%;
     
     margin-top: 60px;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 500;
   }
+
+  .footer{
+    background-color: #ebebed;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 500px;
+  }
+
+  .footer__img{
+    max-width: 600px;
+    opacity: 0.1;
+    margin-left: 165px;
+  }
+
+  .portfolio__img{
+    width: 420px;
+    
+}
+
+.portfolio__content{
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 
 @media screen and (min-width: 1024px){
@@ -550,13 +674,14 @@ header {
     height: 90%;
     margin-left: 18px;
     transform: translateY(5.5%);
-    border: 1px solid white;
+    box-shadow: 1px 1px 3px black;
   }
 
   .painel{
-    background-color: #38001f;
+    background-color: #ffffff;
     width: 100%;
     height: 500px;
+    box-shadow: 1px 1px 3px black;
   }
 
   .painel__border{
@@ -564,34 +689,118 @@ header {
     grid-template-columns: 2fr 5fr;
   }
 
-  .painel__content{
-    width: 97%;
-    height: 90%;
-    margin-left: 15px;
-    transform: translateY(5.5%);
-    border: 1px solid rgb(255, 255, 255);
+  .portfolio__content{
+    padding: 2.5rem 8.25rem;
+  }
+  
+  .portfolio__img{
+    width: 450px;
+    border-radius: .5rem;
+  }
+  
+
+  .portfolio__title{
+
+    color: rgb(0, 0, 0);
+    margin-left: 580px;
+    margin-top: 115px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
   }
 
-  .painel__img{
-    width: 280px;
-    margin-top: 15px;
-    margin-left: 50px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px black;
+  .portfolio__subtitle{
+    margin-left: 390px;
+    
   }
-  
-  
+
+
+
   .painel__title{
-    color: white;
+    color: rgb(0, 0, 0);
     width: 92%;
     
     margin-top: 115px;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 500;
+  }
+
+  .section__title{
+    margin-left: 550px;
+  }
+  
+  
+  .sections__subtitle{
+    margin-left: 545px;
+  }
+
+  .contato__informacao{
+    margin-left: 210px;
+  }
+  .contato__icon-wz{
+    font-size: 50px;
+    margin-left: 300px;
+  }
+
+  .contato__title-wz{
+    margin-left: 120px;
+  }
+
+  .footer{
+    background-color: #ebebed;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 500px;
+  }
+
+  .footer__img{
+    max-width: 600px;
+    opacity: 0.1;
+    margin-left: 400px;
   }
 }
 
 
+
+.waze-frame{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.local{
+  position: relative;
+  top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
+
+
+.section__subtitle{
+  margin-bottom: 4rem;
+
+}
+
+.contato__container{
+  width: 460px;
+}
+
+
+
+
+
+.contato{
+  background-color: #ebebed;
+  font-family: 'Work Sans', sans-serif;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.637);
+}
+
+.contato__informacao a{
+  text-decoration: none;
+  color: black;
+}
 
 /*-------------------------------- WebKit - ScrollBar  ------------------------------------------*/
 

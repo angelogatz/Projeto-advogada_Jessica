@@ -31,7 +31,6 @@ html{
 
 body{
   background-color: #ebebed;
-  font-family: 'Moeda', Times, serif;
 }
 /*-------------------------------- BUTTON, MOUSE AND SOCIALS ------------------------------------------*/
 header {
@@ -604,7 +603,7 @@ header {
 
   .painel__img{
     max-width: 250px;
-    margin-left: 55px;
+    margin-left: 110px;
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
@@ -614,7 +613,7 @@ header {
   .painel__title{
     color: black;
     width: 88%;
-    margin-left: 25px;
+    margin-left: 50px;
     margin-top: 20px;
     font-family: 'Josefin Slab', serif;
     font-weight: 500;
@@ -624,7 +623,7 @@ header {
   }
 
   .painel_title{
-    margin-left: 105px;
+    margin-left: 160px;
     font-family: 'Josefin Slab', serif;
   }
   
@@ -674,6 +673,16 @@ header {
     grid-template-columns: repeat(1, 1fr);
 }
 
+
+.painel{
+  background-color: #ffffff;
+  width: 100%;
+  height: 883px;
+  
+}
+
+
+
 .painel__content{
   margin-left: 10px;
 }
@@ -708,7 +717,7 @@ header {
   .painel{
     background-color: #ffffff;
     width: 100%;
-    height: 400px;
+    height: 415px;
     
   }
 
@@ -730,14 +739,15 @@ header {
     margin-top: 15px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
+    margin-left: 20px;
   }
   
   
   .painel__title{
     color: rgb(0, 0, 0);
     width: 92%;
-    
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
     font-family: 'Josefin Slab', serif;
     font-weight: 500;
   }
@@ -745,7 +755,8 @@ header {
   .painel_title{
     font-family: 'Josefin Slab', serif;
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 0;
+    margin-left: 120px;
   }
 
   .footer{
@@ -806,20 +817,21 @@ header {
     border-radius: .5rem;
   }
   
+  .title--h2{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .portfolio__title{
 
     color: rgb(0, 0, 0);
-    margin-left: 580px;
     margin-top: 115px;
     font-family: 'Josefin Slab', serif;
     font-weight: 500;
   }
 
-  .portfolio__subtitle{
-    margin-left: 390px;
-    
-  }
+  
 
   .painel__img{
     width: 320px;
@@ -847,12 +859,14 @@ header {
   }
 
   .section__title{
-    margin-left: 550px;
+    margin-left: 580px;
+    font-size: 35px;
   }
   
   
   .sections__subtitle{
-    margin-left: 545px;
+    margin-left: 560px;
+    font-size: 20px;
   }
 
   .contato__informacao{
@@ -860,16 +874,21 @@ header {
   }
   .contato__icon-wz{
     font-size: 50px;
-    margin-left: 300px;
+    margin-left: 335px;
   }
 
   .contato__title-wz{
-    margin-left: 120px;
+    margin-left: 25px;
+    text-align: center;
+  }
+
+  .contato{
+    height: 400px;
   }
 
   .footer{
     background-color: #ebebed;
-    font-family: 'Moeda', Times, serif;
+    font-family: 'Josefin Slab', serif;
     width: 100%;
     height: 500px;
   }
@@ -896,6 +915,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
+  font-family: 'Josefin Slab', serif;
 }
 
 
@@ -907,6 +927,7 @@ header {
 
 .contato__container{
   width: 460px;
+  font-family: 'Josefin Slab', serif;
 }
 
 
@@ -915,7 +936,7 @@ header {
 
 .contato{
   background-color: #ebebed;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Josefin Slab', serif;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.637);
 }
 
@@ -935,6 +956,11 @@ header {
   ::-webkit-scrollbar-thumb{
     background-color: #d15fa293;
     border-radius: .5rem;
+  }
+
+
+  body{
+    background-color: #ebebed;
   }
 
 

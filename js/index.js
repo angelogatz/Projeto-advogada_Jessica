@@ -68,6 +68,32 @@ function reveal_content(){
 }
 
 
+/*-------------------------------------------------------------------------*/
+
+
+window.addEventListener('scroll', reveal_painel);
+
+function reveal_painel(){
+    var reveals = document.querySelectorAll('.reveal_painel');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
 
 let swiper = new Swiper('.portfolio__container', {
     cssMode: true,

@@ -490,6 +490,31 @@ header {
   font-family: 'Josefin Slab', serif;
 }
 
+
+/*__________________________________________________________________________________________*/
+
+
+.grey__content{
+
+}
+
+.grey_title{
+
+}
+
+.grey__subtitle{
+
+}
+
+
+
+/*__________________________________________________________________________________________*/
+
+
+
+
+
+
 .footer{
   background-color: #ebebed;
   font-family: 'Josefin Slab', serif;
@@ -613,20 +638,35 @@ header {
   .painel__title{
     color: black;
     width: 88%;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 20px;
     font-family: 'Josefin Slab', serif;
     font-weight: 500;
+  }
+
+  .grey__content{
+
+  }
+  
+  .grey_title{
+  
+  }
+  
+  .grey__subtitle{
+    
   }
   .section__title{
     margin-left: 100px;
   }
 
   .painel_title{
-    margin-left: 160px;
+    margin-left: 110px;
     font-family: 'Josefin Slab', serif;
   }
   
+  .title--h2{
+    font-family: 'Josefin Slab', serif;
+  }
   
   .sections__subtitle{
     margin-left: 75px;
@@ -645,6 +685,18 @@ header {
     margin-top: 40px;
     margin-left: 5px;
   }
+
+  .portfolio__title{
+    font-size: 30px;
+    margin-left: 55px;
+  }
+
+  .portfolio__subtitle{
+    font-size: 20px;
+    
+  }
+
+  
 
   
 }
@@ -710,6 +762,36 @@ header {
   margin-top: 10px;
   margin-left: 220px;
 }
+
+
+.grey__content{
+
+}
+
+.grey_title{
+
+}
+
+.grey__subtitle{
+  
+}
+
+.portfolio__title{
+  font-size: 30px;
+  margin-left: 120px;
+}
+
+.title--h2{
+  max-width: 80%;
+  margin-left: 75px;
+  margin-right: auto;
+}
+
+.portfolio__subtitle{
+ 
+  font-size: 20px;
+  
+}
 }
 
 @media screen and (min-width: 768px){
@@ -759,6 +841,24 @@ header {
     margin-left: 120px;
   }
 
+
+  .grey__content{
+
+  }
+  
+  .grey_title{
+  
+  }
+  
+  .grey__subtitle{
+    
+  }
+
+  .portfolio__title{
+    font-size: 30px;
+    margin-left: 200px;
+  }
+
   .footer{
     background-color: #ebebed;
     font-family: 'Josefin Slab', serif;
@@ -789,23 +889,41 @@ header {
 
 @media screen and (min-width: 1024px){
   .painel__content{
-    width: 97%;
-    height: 90%;
+    width: 93%;
+    height: 100%;
     margin-left: 18px;
+    margin-top: -23px;
     transform: translateY(5.5%);
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
   }
 
   .painel{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
     background-color: #ffffff;
-    width: 100%;
-    height: 500px;
-    box-shadow: 1px 1px 3px black;
+    
+    
   }
 
-  .painel__border{
-    display: grid;
-    grid-template-columns: 2fr 5fr;
+
+  .grey__content{
+    width: 700px;
+    margin-left: 100px;
+    background-color: #ebebed;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
+  }
+  
+  .grey_title{
+   font-family: 'Josefin Slab', serif;
+   margin-left: 225px;
+  }
+  
+  .grey__subtitle{
+    font-family: 'Josefin Slab', serif;
+    margin-left: 80px;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 2;
   }
 
   .portfolio__content{
@@ -818,7 +936,7 @@ header {
   }
   
   .title--h2{
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -829,14 +947,18 @@ header {
     margin-top: 115px;
     font-family: 'Josefin Slab', serif;
     font-weight: 500;
+    margin-left: 230px;
   }
 
   
 
+  
+  
+
   .painel__img{
     width: 320px;
-    margin-top: 25px;
-    margin-right: auto;
+    margin-top: 20px;
+    margin-right: 27px;
     margin-left: 20px;
   }
 
@@ -964,3 +1086,15 @@ header {
   }
 
 
+  .reveal_painel{
+    position: relative;
+    transform: translateX(-255px);
+    opacity: 0;
+    transition: all 3s ease;
+    overflow: hidden;
+  }
+  
+  .reveal_painel.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }

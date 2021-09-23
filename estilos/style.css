@@ -636,6 +636,11 @@ header {
     margin-left: 5px;
     transform: translateY(5.5%);
     box-shadow: 1px 1px 3px black;
+    background-color: #ebebed
+  }
+
+  .colored_gray{
+    background-color: #ebebed;
   }
 
   .painel__img{
@@ -740,6 +745,10 @@ header {
     
 }
 
+.colored_gray{
+  background-color: #ebebed;
+}
+
 .portfolio__content{
     grid-template-columns: repeat(1, 1fr);
 }
@@ -756,6 +765,7 @@ header {
 
 .painel__content{
   margin-left: 10px;
+  background-color: #ebebed
 }
 
 

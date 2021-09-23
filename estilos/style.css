@@ -889,10 +889,9 @@ header {
 
 @media screen and (min-width: 1024px){
   .painel__content{
-    width: 93%;
-    height: 100%;
+    width: 91%;
     margin-left: 18px;
-    margin-top: -23px;
+    margin-top: 15px;
     transform: translateY(5.5%);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
   }
@@ -900,15 +899,23 @@ header {
   .painel{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    background-color: #ffffff;
+    background-color: #ebebed;
     
     
+  }
+
+  .colored_gray{
+    width: 100%;
+    height: 450px;
+    margin-top: -20px;
+    background-color: #ebebed;
   }
 
 
   .grey__content{
     width: 700px;
-    margin-left: 100px;
+    margin-top: 25px;
+    margin-left: auto;
     background-color: #ebebed;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
   }
@@ -956,10 +963,10 @@ header {
   
 
   .painel__img{
-    width: 320px;
-    margin-top: 20px;
-    margin-right: 27px;
-    margin-left: 20px;
+    width: 238px;
+    margin-top: 10px;
+    margin-right: 17px;
+    margin-left: 9px;
   }
 
 
@@ -1088,9 +1095,9 @@ header {
 
   .reveal_painel{
     position: relative;
-    transform: translateX(-255px);
+    transform: translateX(-155px);
     opacity: 0;
-    transition: all 3s ease;
+    transition: all s ease;
     overflow: hidden;
   }
   

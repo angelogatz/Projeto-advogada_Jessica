@@ -485,8 +485,13 @@ header {
 }
 
 .painel_title{
+  margin-top: 20px;
   margin-left: 60px;
   font-size: 20px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.painel__subtitle{
   font-family: 'Josefin Slab', serif;
 }
 
@@ -651,6 +656,9 @@ header {
     font-weight: 500;
   }
 
+  .painel__subtitle{
+    font-family: 'Josefin Slab', serif;
+  }
   
   .section__title{
     margin-left: 100px;

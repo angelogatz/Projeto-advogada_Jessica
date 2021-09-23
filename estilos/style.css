@@ -464,6 +464,7 @@ header {
   margin-left: 2px;
   transform: translateY(1%);
   box-shadow: 1px 1px 3px black;
+  background-color: #ebebed
 }
 
 .painel__img{
@@ -493,6 +494,7 @@ header {
 
 .painel__subtitle{
   font-family: 'Josefin Slab', serif;
+  margin-left: 10px;
 }
 
 
@@ -547,8 +549,11 @@ header {
 }
 
 .portfolio__img{
-  width: 300px;
+  width: 250px;
   border-radius: .5rem;
+}
+.swiper-wrapper{
+  overflow: hidden;
 }
 
 .portfolio__title{
@@ -639,9 +644,7 @@ header {
     background-color: #ebebed
   }
 
-  .colored_gray{
-    background-color: #ebebed;
-  }
+  
 
   .painel__img{
     max-width: 250px;
@@ -663,6 +666,7 @@ header {
 
   .painel__subtitle{
     font-family: 'Josefin Slab', serif;
+    margin-left: 10px;
   }
   
   .section__title{

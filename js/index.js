@@ -78,6 +78,7 @@ let swiper = new Swiper('.portfolio__container', {
     pagination: {
         el: 'swiper-pagination'
     },
+    slidesPerView: 1,
     autoplay: true,
     mousewheel: true,
     keyboard: true,

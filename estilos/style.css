@@ -457,7 +457,7 @@ header {
 
 .sobre__painel-gray{
   width: 100%;
-  height: 115vh;
+  height: 120vh;
   background-color: #ebebed;
 }
 .grid{
@@ -486,7 +486,7 @@ header {
   width: 40%;
 }
 .sobre-img{
-  
+  margin-left: 10px;
   height: 65vh;
 }
 
@@ -499,17 +499,56 @@ header {
 
 
 .footer{
+  display: inline-flex;
   background-color: #ebebed;
   font-family: 'Raleway', sans-serif;
   width: 100%;
-  height: 330px;
+  height: 300px;
 }
 
-.footer__img{
-  max-width: 200px;
-  opacity: 0.1;
-  margin-top: 40px;
-  margin-left: 5px;
+
+.footer__text,
+.footer__links,
+.footer__socials,
+.footer__social{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.footer__socials{
+  margin-top: -50px;
+  font-size: 20px;
+  margin-right: 170px;
+}
+
+
+.footer__links{
+  margin-top: -80px;
+}
+
+.footer__link{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 3;
+  color: black;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.footer__title{
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -100px;
+ 
+  
+}
+
+
+.footer__subtitle{
+  
+  font-size: 15px;
 }
 
 .container-lb{
@@ -521,16 +560,14 @@ header {
 }
 
 .portfolio__content{
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .portfolio__img{
   width: 250px;
   border-radius: .5rem;
 }
-.swiper-wrapper{
-  overflow: hidden;
-}
+
 
 .title--h2{
   width: 80%;
@@ -602,6 +639,62 @@ header {
     font-size: 20px;
     
   }
+
+
+  .footer{
+    display: inline-flex;
+    background-color: #ebebed;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 300px;
+  }
+  
+  
+  .footer__text,
+  .footer__links,
+  .footer__socials,
+  .footer__social{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  
+  .footer__socials{
+    margin-top: -50px;
+    font-size: 20px;
+    margin-right: 250px;
+  }
+  
+  
+  .footer__links{
+    margin-top: -80px;
+  }
+  
+  .footer__link{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 3;
+    color: black;
+    margin-right: 50px;
+    text-decoration: none;
+  }
+  
+  .footer__title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: -100px;
+   
+    
+  }
+  
+  
+  .footer__subtitle{
+    
+    font-size: 15px;
+  }
+
+
   .page{
     width: 100%;
   }
@@ -624,7 +717,7 @@ header {
   .sobre__painel-texto{
     width: 100%;
     height: 150px;
-    margin-left: 10%;
+    
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -701,6 +794,59 @@ header {
   
 }
 
+.footer{
+  display: inline-flex;
+  background-color: #ebebed;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 300px;
+}
+
+
+.footer__text,
+.footer__links,
+.footer__socials,
+.footer__social{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.footer__socials{
+  margin-top: -50px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+
+.footer__links{
+  margin-top: -80px;
+}
+
+.footer__link{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 3;
+  color: black;
+  margin-right: 120px;
+  text-decoration: none;
+}
+
+.footer__title{
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: -100px;
+  margin-left: 10px;
+  
+}
+
+
+.footer__subtitle{
+  margin-left: 15px;
+  font-size: 15px;
+}
+
 .page{
   width: 100%;
 }
@@ -749,6 +895,64 @@ header {
 }
 }
 
+
+@media screen and (min-width: 665px){
+
+  .footer{
+    display: inline-flex;
+    background-color: #ebebed;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 300px;
+  }
+  
+  
+  .footer__text,
+  .footer__links,
+  .footer__socials,
+  .footer__social{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  
+  .footer__socials{
+    margin-top: -50px;
+    font-size: 25px;
+    margin-right: 100px;
+  }
+  
+  
+  .footer__links{
+    margin-top: -80px;
+  }
+  
+  .footer__link{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 3;
+    color: black;
+    margin-right: 100px;
+    text-decoration: none;
+  }
+  
+  .footer__title{
+    font-size: 75px;
+    font-weight: 700;
+    margin-top: -100px;
+    margin-left: 50px;
+    
+  }
+  
+  
+  .footer__subtitle{
+    margin-left: 50px;
+    font-size: 20px;
+  }
+}
+
+
 @media screen and (min-width: 768px){
 
   .portfolio__title{
@@ -776,6 +980,59 @@ header {
 
 .portfolio__content{
     grid-template-columns: repeat(1, 1fr);
+}
+
+.footer{
+  display: inline-flex;
+  background-color: #ebebed;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 300px;
+}
+
+
+.footer__text,
+.footer__links,
+.footer__socials,
+.footer__social{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.footer__socials{
+  margin-top: -50px;
+  font-size: 25px;
+  margin-right: 100px;
+}
+
+
+.footer__links{
+  margin-top: -80px;
+}
+
+.footer__link{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 3;
+  color: black;
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+.footer__title{
+  font-size: 75px;
+  font-weight: 700;
+  margin-top: -100px;
+  margin-left: 50px;
+  
+}
+
+
+.footer__subtitle{
+  margin-left: 50px;
+  font-size: 20px;
 }
 
 .page{
@@ -838,7 +1095,13 @@ header {
     padding: 2.5rem 8.25rem;
   }
 
-  
+  .home__scroll-button{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s ease;
+  }
+
   .portfolio__img{
     width: 350px;
     border-radius: .5rem;
@@ -888,18 +1151,56 @@ header {
   }
 
   .footer{
+    display: inline-flex;
     background-color: #ebebed;
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    height: 500px;
+    height: 300px;
   }
 
-  .footer__img{
-    max-width: 600px;
-    opacity: 0.1;
-    margin-left: 400px;
+
+  .footer__text,
+  .footer__links,
+  .footer__socials,
+  .footer__social{
+    color: black;
+    list-style: none;
+    text-decoration: none;
   }
 
+
+  .footer__socials{
+    margin-top: -50px;
+    font-size: 25px;
+    margin-right: 300px;
+  }
+
+
+  .footer__links{
+    margin-top: -80px;
+  }
+
+  .footer__link{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 3;
+    color: black;
+    margin-right: 350px;
+    text-decoration: none;
+  }
+
+  .footer__title{
+    font-size: 75px;
+    font-weight: 700;
+    margin-top: -100px;
+    margin-left: 50px;
+  }
+
+
+  .footer__subtitle{
+    margin-left: 50px;
+    font-size: 20px;
+  }
   .page{
     width: 100%;
   }
@@ -1025,3 +1326,15 @@ header {
     transform: translateX(0px);
     opacity: 1;
   }
+
+
+  .parallax__footer{
+    background-image: url(/assets/03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}

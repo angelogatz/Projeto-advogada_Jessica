@@ -734,7 +734,7 @@ header {
   
   .sobre__painel-texto{
     width: 97%;
-    height: 260px;
+    height: 350px;
     
     margin-right: auto;
     margin-top: 20px;
@@ -1249,7 +1249,7 @@ header {
   
   .sobre__painel-texto{
     width: 85%;
-    height: 530px;
+    height: 595px;
     margin-left: 150px;
     margin-right: 50px;
     margin-top: auto;

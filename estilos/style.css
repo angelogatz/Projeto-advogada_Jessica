@@ -499,7 +499,14 @@ header {
 
 /*__________________________________________________________________________________________*/
 
+.img-rouded{
+  box-shadow: 3px 4px 5px rgba(165, 143, 132, 0.479);
+}
 
+
+.rounded{
+  max-width: 340px;
+}
 
 
 
@@ -613,6 +620,9 @@ header {
 
 @media screen and (min-width: 300px){
 
+  .thumb__mg{
+    padding: 20px;
+}
   
   
   .section__title{
@@ -1115,6 +1125,20 @@ header {
 @media screen and (min-width: 1024px){
   
 
+  .artigo__subtitle{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'engravers';
+  }
+
+  .artigo__title{
+    font-size: 17px;
+    font-family: 'Josefin Slab';
+    font-weight: 500;
+
+  }
+
+
   .portfolio__content{
     padding: 2.5rem 8.25rem;
   }
@@ -1385,6 +1409,27 @@ header {
   color: white;
 }
 
+
+.main-btn{
+  background-color: #464646;
+  color: white;
+  text-transform: uppercase;
+  width: 130px;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  transition: .5s;
+  text-decoration: none;
+  font-family: 'engravers';
+}
+
+.main-btn:hover{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border-color: #464646;
+}
 
 
 

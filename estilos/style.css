@@ -1488,9 +1488,10 @@ nav .icon-burger .line {
 
 
 .parallax-atuacao{
-  background-image: url(/assets/jason-sung-rFDIjNe85zA-unsplash.jpg);
-  background-position: center top;
+  background-image: url(/assets/bg-paginas2.jpg);
+  background-position: center;
   width: auto;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   color: white;

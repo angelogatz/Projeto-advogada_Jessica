@@ -25,22 +25,24 @@
 
 
 
-  <header class="">
-    <input id="toggler" class="toggler" type="checkbox">
-    <label for="toggler" class="burger">
-      <span><i class="fas fa-bars"></i></span>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><img src="assets/loogok2.png" class="logok2" alt=""></div>
+    <ul class="links">
+      <li><a href="home.html">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="atuacao.html">Atuação</a></li>
+      <li><a href="artigos.html">Artigos</a></li>
+      <li><a href="#contato">Contatos</a></li>
+      <li><a href="#local">Local</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </label>
-    <nav>
-      <ul class="">
-        <li><a href="home.html">Inicio</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portfolio">Artigos</a></li>
-        <li><a href="atuacao.html">Atuação</a></li>
-        <li><a href="#contato">Contatos</a></li>
-        <li><a href="#local">Localização</a></li>
-      </ul>
-    </nav>
-  </header>
+  </nav>
+
 
 
 
@@ -116,8 +118,8 @@
 
       <section class="content-side" id="pacotes">
         <div class="container">
-          <div class="row ">
-            <div class="col-sm-4 thumb__mg">
+          <div class="artigos__ajuste">
+            <div class=" thumb__mg ">
               <div class="img-thumbnail text-center">
                 <img src="assets/artigos/comecei-meu-negocio.jpeg" class="rounded img-rouded">
                 <div class="caption text-center">
@@ -128,13 +130,13 @@
                   <br>
                   
                   <p>
-                    <a href="serviços.html" class="main-btn">Ler Mais</a>
+                    <a href="artigos.html#comecar" class="main-btn">Ler Mais</a>
                   </p>
                 </div>
               </div>
             </div>
       
-            <div class="col-sm-4 thumb__mg">
+            <div class=" thumb__mg">
               <div class="img-thumbnail text-center">
                 <img src="assets/artigos/desenho-industrial.jpeg" class="rounded img-rouded">
                 <div class="caption text-center">
@@ -142,13 +144,13 @@
                   <p class="artigo__subtitle">Desenho industrial, quando preciso registrar?</p>
                   <br>
                   <p>
-                    <a href="serviços.html" class="main-btn">Ler Mais</a>
+                    <a href="artigos.html#desenho" class="main-btn">Ler Mais</a>
                   </p>
                 </div>
               </div>
             </div>
       
-            <div class="col-sm-4 thumb__mg">
+            <div class="thumb__mg">
               <div class="img-thumbnail text-center">
                 <img src="assets/artigos/o-que-é-copyright.jpeg" class="rounded img-rouded" alt="">
                 <div class="caption text-center">
@@ -156,7 +158,7 @@
                   <span class="artigo__title">Copyright é uma proteção conferida pela Lei 9.610/98 aos autores de obras intelectuais, artísticas, científicas e literárias. <br> </span>
                   <br>
                   <p>
-                    <a href="serviços.html" class="main-btn">Ler Mais</a>
+                    <a href="artigos.html#copy" class="main-btn">Ler Mais</a>
                   </p>
                 </div>
               </div>
@@ -167,173 +169,7 @@
    
 <!----------------------------------------- modal dos artigos ------------------------------------------->
     
-      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Logo Basic</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-                <h1 class="skills__title text-center">
-                  </h1>
-                  <p class="skills__link">Ao adquirir esse pacote, você receberá os seguintes arquivos:</p>
-                  
-                      
-                        <span class="skills__subtitle">
-                          • Logo Principal
-                          <br>
-                          • Marca d’água
-                          <br>
-                        </span>
-                      
-                  
-                  Os arquivos serão enviados nos seguintes formatos:
       
-                      <span class="skills__subtitle">
-                        <br>
-                        • EPS: arquivo editável;
-                        <br>
-                        • JPG: imagem;
-                        <br>
-                        • PNG: marca d’água
-                      </span>
-                
-              
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="modal-button btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">ID Visual</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-              <h1 class="skills__title text-center">
-                </h1>
-                <p class="skills__link">Ao adquirir esse pacote, você receberá os seguintes arquivos:</p>
-                
-                    
-                      <span class="skills__subtitle">
-                        • Logo Principal
-                        <br>
-                        • 1 variação de cor do logo principal (com fundo escuro e com fundo claro);<br>
-                        1 variação de posição (podendo ser horizontal ou vertical, com variação de cor - escuro e claro);
-                        <br>
-                        • 1 submarca (em formato circular com variação de cor - escuro e claro);
-                        <br>
-                        • 6 marcas d’água (em 3 variações de posição, sendo 3 escuras e 3 claras);
-      
-                        <br>
-                        • Manual da Marca: Tipografia e Paleta de Cor;
-      
-                        <br>
-                        • 3 Mockups (aplicação do logo);
-      
-                        <br>
-      
-                      </span>
-                    
-                
-                Os arquivos serão enviados nos seguintes formatos:
-      
-                    <span class="skills__subtitle">
-                      <br>
-                      • EPS: arquivo editável;
-                      <br>
-                      • JPG: imagem;
-                      <br>
-                      • PNG: marca d’água
-                      <br>
-                      • PDF: manual da marca
-                    </span>
-              
-            
-          </div>
-            <div class="modal-footer">
-              <button type="button" class="modal-button btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Digital</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-              <h1 class="skills__title text-center">
-                </h1>
-                <p class="skills__link">Ao adquirir esse pacote, você receberá os seguintes arquivos:</p>
-                
-                    
-                      <span class="skills__subtitle">
-                        • Logo Principal
-                        <br>
-                        • 1 variação de cor do logo principal (com fundo escuro e com fundo claro);<br>
-                        1 variação de posição (podendo ser horizontal ou vertical, com variação de cor - escuro e claro);
-                        <br>
-                        • 1 submarca (em formato circular com variação de cor - escuro e claro);
-                        <br>
-                        • 6 marcas d’água (em 3 variações de posição, sendo 3 escuras e 3 claras);
-                        <br>
-                        • Manual da Marca: Tipografia e Paleta de Cor;
-                        <br>
-                        • 3 Mockups (aplicação do logo);
-      
-                        <br>
-                        • Até 8 Capas de Destaque para Instagram;
-                        <br>
-                        • 3 Layouts para post em formato feed (1080x1080 px);
-                        <br>
-                        • 3 Layouts para post em formato story (1080x1920 px);
-                        <br>
-                        • Capa para Facebook;
-                        <br>
-                        • Cartão Digital Interativo.
-                        <br>
-      
-      
-                      </span>
-                    
-                
-                Os arquivos serão enviados nos seguintes formatos:
-      
-                    <span class="skills__subtitle">
-                      <br>
-                      • EPS: arquivo editável;
-                      <br>
-                      • JPG: imagem;
-                      <br>
-                      • PNG: marca d’água
-                      <br>
-                      • PDF: manual da marca
-                    </span>
-              
-            
-          </div>
-            <div class="modal-footer">
-              <button type="button" class="modal-button btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
     <!----------------------------------------- CONTATO ------------------------------------------->
 
     <section class="reveal_content contato section" id="contato">
@@ -409,7 +245,7 @@
         </li>
 
         <li>
-          <a href="#portfolio" class="footer__link">Artigos</a>
+          <a href="artigos.html" class="footer__link">Artigos</a>
         </li>
 
         <li>

@@ -230,6 +230,13 @@ body {
 
 }
 
+@media screen and (max-width: 568px){
+
+    .footer{
+        margin-top: 1200px;
+    }
+}
+
 
 @media screen and (max-width: 300px){
     .footer{
